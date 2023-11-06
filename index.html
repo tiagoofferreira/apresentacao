@@ -1,0 +1,290 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title Caio Corrêa></title>
+</head>
+
+<body class="bg-background">
+    
+  <header>
+    <nav>
+      <ul class="list-none p-3">
+        <li> <a href="#">Tiago Ferreira </a></li>
+        
+        <li class=" float-right">
+          <div class="md:block
+                   hidden gap-4">
+            <a href="#about">Sobre</a>
+            <a href="#stack">Conhecimentos</a>
+            <a href="#project">Projetos</a>
+            <a href="#contato">Contato</a>
+          </div>
+        </li>
+        <li class="float-right md:hidden">
+         <button onclick="hide()"> 
+              <i class="fa fa-bars"></i>
+            </button>
+        </li>
+      </ul>
+      <ul id="navMob" class="md:hidden hidden p-2 absolute w-full">
+        <li class="float-right">
+          <div class="grid
+                      grid-row-4
+                      justify-items-right
+                      content-right
+                      place-self-end
+                      text-right
+                      gap-4">
+              <a href="#about">Sobre</a>
+              <a href="#stack">Stack</a>
+              <a href="#project">Projetos</a>
+              <a href="#contato">Contato</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+        <!-- 
+            -- > Intro 
+        -->
+        <div class="h-screen 
+                    text-white
+                    grid 
+                    grid-row-4
+                    space-y-4
+                    justify-items-center
+                    content-center"
+              id="intro">
+
+             <div id="profilePic" 
+               class="bg-local
+                      h-52 
+                      w-52
+                      rounded-full
+                      justify-items-center
+                      content-center"
+                      >
+                      <img style="background-image:url('imagemtiagof.png;')"
+                           class="h-full w-full rounded-full">
+          </div> 
+
+            <h1 class="text-3xl font-black introAnimate">Tiago Ferreira </h1>
+            
+            <hr class="w-1/2 t-white-900 introAnimate ">
+            
+            <h2 class="text-xl tracking-wide introAnimate">Estudante</h2>
+        </div>
+       
+        <!--
+            -- >  About / Bios
+        -->
+    
+        <div class="xl:h-screen
+                    h-full
+                    flex
+                    flex-col
+                    aling-items-center
+                    animate"
+              id="about">
+            
+            <h2 class="text-center">-- Sobre --</h2>
+            
+            <div class="t-4 
+                        indent-8
+                        t-center
+                        md:px-52
+                        px-10
+                        space-y-5
+                        mt-10">
+                <p>
+                    Sempre utilizei o computador de um modo geral para lazer,
+                    pesquisas, trabalhos escolares, explorando a internet de 
+                    forma descompromissada, porém, ao mesmo tempo, foi inevitável 
+                    a curiosidade para aprender mais sobre esse universo, que foi 
+                    acontecendo aos poucos.
+                </p>
+                <p>
+                    A minha escola atual é Escola Secundaria Augusto Gomes, Estou no Curso Profissional
+                    De Tecnico de Gestao e Progamaçao. 
+                </p>
+                <p>
+                    Tenho 18 anos , sou natural de Matosinhos.
+                </p>
+                <p>
+                    Quero semprem aprimorar meus conhecimentos, por isso gosto de testar e desenvolver diversas tecnologias.
+                </p>
+            </div>
+        </div>
+
+        <!--
+            -- > Stack
+        -->
+
+        <div class="lg:h-screen
+                    h-full
+                    lg:mt-0
+                    mt-24
+                    text-center 
+                    space-y-2
+                    animate"
+              id="stack">
+
+            
+            <h2>-- Conhecimentos --</h2>
+            
+            <div id="stackPanels" class="grid       
+                        md:grid-flow-col 
+                        gap-4
+                        p-5
+                        h-full">
+                 
+                <div id="linguagens" 
+                    class="rounded-xl 
+                           space-y-9
+                           p-5">
+                 
+                    <h4>Linguagens</h4>
+                   
+                    <div class="grid 
+                                grid-cols-2
+                                gap-2
+                                justify-items-center
+                                content-center">
+                        
+                    
+                        
+                      
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" 
+                                class="md:h-32 md:w-32
+                                       h-24 w-24"
+                              title="html5"/>
+                        
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                             class="md:h-32 md:w-32
+                                       h-24 w-24"
+                             title="css3"/>
+
+                      
+                       
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" 
+                             class="md:h-36 md:w-32
+                                       h-24 w-24"
+                             title="php"/>
+            
+                    </div>
+                </div>
+                
+                <div class="grid
+                            grid-col-2
+                            md:grid-row-2
+                            gap-4">
+
+                    <div id="frameworks" class="rounded-xl">
+                        
+                        <h4>Frameworks</h4>
+
+                        <div class="grid 
+                                grid-cols-2
+                                gap-2
+                                justify-items-center
+                                content-center
+                                space-y-3
+                                p-5">
+                            
+                        
+                            
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" 
+                                    class="md:h-32 md:w-32
+                                       h-24 w-24"
+                                  title="bootstrap"/>
+                
+                            
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" 
+                                class="md:h-32 md:w-32
+                                       h-24 w-24"
+                                title="React"/>
+                        </div>
+                    </div>
+                    <div id="bibiliotecas" 
+                         class="rounded-xl
+                                space-y-2
+                                p-2">
+
+                        <h4>DB</h4>
+                        
+                        <div class="grid 
+                                grid-cols-2
+                                gap-2
+                                justify-items-center
+                                content-center">
+                            
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"
+                                class="md:h-32 md:w-32
+                                       h-24 w-24"/>
+                        
+                    
+
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div> 
+            
+       <!--
+            -- > Projetos 
+        -->
+            
+        <div class="h-auto
+                    mt-36
+                    lg:h-screen
+                    text-center
+                    p-8
+                    animate"
+              id="project">
+                
+                <h2 class="mt-2"> -- Projetos -- </h2>
+                    
+                <div class="grid
+                            mt-3
+                            lg:grid-cols-3
+                            md:p-56
+                            p-0
+                            lg:p-0
+                            grid-row-3
+                            gap-4
+                            justify-itens-center
+                            h-full
+                            ">
+                    
+                    <div class="bg-card rounded-xl 
+                                grid grid-row-4
+                                justify-items-center
+                                text-center
+                                h-full    
+                                p-3 
+                                hover:bg-cardHover">
+       
+               </div>
+             </div>
+            </div>
+    </main>
+
+    <!--
+      -- > footer
+    -->
+
+    <footer class="text-center bg-purple">
+        <span class="mt-10 lg:mt-0">
+
+          Desenvolvido com <i class="fa fa-heart text-rose-600"></i>
+          <strong>por mim</strong>  
+      </span>
+    </footer>
+  
+  <script src="./script.js"></script>
+</body>
